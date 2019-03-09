@@ -1,0 +1,17 @@
+1.) $to
+Receiver's email address. As specified in the PHP docs, the receiver's email address should take the following formats
+
+user@example.com
+user@example.com, anotheruser@example.com (Sending to multiple users)
+User <user@example.com> (Specifying the user's username)
+2.) $subject: 
+The subject of the email to be sent
+
+3.) $message: 
+The message. Each line should contain no more than 70 characters. Each line should be separated with a CRLF (\r\n). You could solve this simply by wrapping the message text around the PHP wordwrap() function. Like so:
+
+$message = wordwrap($message, 70);
+4.) $headers:
+This one is optional. But If you want to do some styling on the email you send, you must specify the Content-Type in the header as text/html;charset=UTF-8 to tell email clients to parse the email as HTML. 
+
+
