@@ -1,0 +1,7 @@
+A basic usage of the mail() function looks like this:
+
+<?php
+  mail("receiver@example.com","My subject","Hey there! How you doin'");
+?>
+The above piece of code will actually send an email to 'receiver@example.com' with subject 'My Subject' and message 'Hey there! How you doin'' when the script is executed.
+
